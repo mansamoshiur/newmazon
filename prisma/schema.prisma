@@ -16,4 +16,7 @@ model Product {
   description String
   imageUrl    String
   price       Int
+
+  createadAt DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 }
